@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Helmet from "react-helmet"
 import "./layout.css"
+import Header from "./header"
 
 
 const Layout = ({ children }) => {
@@ -29,10 +30,9 @@ const Layout = ({ children }) => {
       <Helmet>
         {/* <link rel="icon" href={favicon} /> */}
       </Helmet>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+      
         <Header siteTitle={data.site.siteMetadata.title} />
-        <SideBar />
+        
         <div
           style={{
             margin: `0 auto`,
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
             <a href="https://www.gatsbyjs.org"> Gatsby </a>{" "}
           </footer>{" "}
         </div>{" "}
-      </ThemeProvider>{" "}
+    
     </>
   )
 }
