@@ -17,6 +17,12 @@ module.exports = {
       },
       `gatsby-transformer-sharp`,
       `gatsby-plugin-sharp`,
+      {
+        resolve: `gatsby-plugin-styled-components`,
+        options: {
+          // Add any options here
+        },
+      },
     //   {
     //     resolve: `gatsby-plugin-manifest`,
     //     options: {
@@ -29,8 +35,6 @@ module.exports = {
     //       icon:  // This path is relative to the root of the site.
     //     },
     //   },
-  
-      // 'gatsby-plugin-styled-components',
   
       // this (optional) plugin enables Progressive Web App + Offline functionality
       // To learn more, visit: https://gatsby.dev/offline
