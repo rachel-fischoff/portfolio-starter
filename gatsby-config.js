@@ -23,6 +23,7 @@ module.exports = {
           // Add any options here
         },
       },
+     `gatsby-plugin-sass`, 
     //   {
     //     resolve: `gatsby-plugin-manifest`,
     //     options: {
