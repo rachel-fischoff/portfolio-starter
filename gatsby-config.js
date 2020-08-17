@@ -1,29 +1,29 @@
 module.exports = {
-    pathPrefix: "/portfolio-starter",
-    siteMetadata: {
-      title: `Portfolio Gatsby Starter`,
-      description: `starter portfolio for digital creative professionals`,
-      author: `@rachel-fischoff & @katygrahamm`,
+  pathPrefix: "/portfolio-starter",
+  siteMetadata: {
+    title: `Portfolio Gatsby Starter`,
+    description: `starter portfolio for digital creative professionals`,
+    author: `@rachel-fischoff & @katygrahamm`,
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static`,
+      },
     },
-    plugins: [
-      `gatsby-plugin-react-helmet`,
-  
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `images`,
-          path: `${__dirname}/static`,
-        },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
-      `gatsby-transformer-sharp`,
-      `gatsby-plugin-sharp`,
-      {
-        resolve: `gatsby-plugin-styled-components`,
-        options: {
-          // Add any options here
-        },
-      },
-     `gatsby-plugin-sass`, 
+    },
+    `gatsby-plugin-sass`,
     //   {
     //     resolve: `gatsby-plugin-manifest`,
     //     options: {
@@ -36,9 +36,9 @@ module.exports = {
     //       icon:  // This path is relative to the root of the site.
     //     },
     //   },
-  
-      // this (optional) plugin enables Progressive Web App + Offline functionality
-      // To learn more, visit: https://gatsby.dev/offline
-      // `gatsby-plugin-offline`,
-    ],
-  }
+
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+  ],
+};
