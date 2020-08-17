@@ -15,7 +15,9 @@ export const Intro = () => {
           </figcaption>
         </figure>
         <div className="intro-container__text">
-          <h1 className="heading-primary">Designer & Developer</h1>
+          <h1 className="intro-container__heading anim-typewriter">
+            Designer & Developer
+          </h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
             architecto quod, illum molestias tempora maxime ipsam dolore! Odit

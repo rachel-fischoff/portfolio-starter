@@ -60,10 +60,24 @@ html {
 }
 
 .intro-container__text {
-  padding: 5rem;
+  padding: 10rem;
   margin-left: 2rem;
   font-size: 3rem;
   text-align: right;
+}
+
+.intro-container__heading {
+  position: relative;
+  top: 60%;
+  width: 11em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: #fff;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
 }
 
 .intro-container:hover .intro-container__caption {
@@ -154,4 +168,26 @@ p {
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 1;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(23) 1s 1 normal both,
+    blinkTextCursor 500ms steps(23) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
