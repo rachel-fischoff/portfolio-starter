@@ -1,16 +1,35 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact</h1>
-    <br/>
+    <form method="post" action="#">
+      <label>
+        Name
+        <input type="text" name="name" id="name" />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" />
+      </label>
+      <label>
+        Subject
+        <input type="text" name="subject" id="subject" />
+      </label>
+      <label>
+        Message
+        <textarea name="message" id="message" rows="5" />
+      </label>
+      <button type="submit">Send</button>
+      <input type="reset" value="Clear" />
+    </form>
+    <br />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
-)
+);
 
-export default Contact
+export default Contact;
