@@ -7,27 +7,33 @@ import SEO from "../components/seo";
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <form method="post" action="#">
-      <label>
-        Name
-        <input type="text" name="name" id="name" />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" id="email" />
-      </label>
-      <label>
-        Subject
-        <input type="text" name="subject" id="subject" />
-      </label>
-      <label>
-        Message
-        <textarea name="message" id="message" rows="5" />
-      </label>
-      <button type="submit">Send</button>
-      <input type="reset" value="Clear" />
-    </form>
-    <br />
+    <div className="contact-container-row">
+      <form className="contact-form" method="post" action="#">
+        <label>
+          Name
+          <input className="contact-input" type="text" name="name" id="name" />
+        </label>
+        <br />
+        <label>
+          Email
+          <input className="contact-input" type="email" name="email" id="email" />
+        </label>
+        <br />
+        <label>
+          Subject
+          <input className="contact-input" type="text" name="subject" id="subject" />
+        </label>
+        <br />
+        <label>
+          Message
+          <textarea className="contact-input" name="message" id="message" rows="5" />
+        </label>
+        <br />
+        <button type="submit">Send</button>
+        <input type="reset" value="Clear" />
+      </form>
+      <br />
+    </div>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 );

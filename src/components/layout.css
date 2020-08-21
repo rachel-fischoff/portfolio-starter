@@ -11,6 +11,23 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contact-container-row {
+  background-color: rgba(65, 0, 255, 0.6);
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.contact-input {
+  background:rgb(141, 102, 255);
+  border: none;
+  border-bottom: 2px solid white;
+  /* border: 2px solid white;
+  border-radius: 4px; */
+  width: 50%;
+  margin: 8px 8px;
+}
+
 .intro-container-row {
   background-color: rgba(65, 0, 255, 0.6);
 }
