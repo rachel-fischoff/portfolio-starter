@@ -29,8 +29,8 @@ const Contact = () => (
           <textarea className="contact-input" name="message" id="message" rows="5" />
         </label>
         <br />
-        <button type="submit">Send</button>
-        <input type="reset" value="Clear" />
+        <button className="contact-button" type="submit">Send</button>
+        <input className="contact-button" type="reset" value="Clear" />
       </form>
       <br />
     </div>

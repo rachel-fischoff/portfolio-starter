@@ -18,14 +18,18 @@ html {
   text-align: center;
 }
 
+.contact-button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 .contact-input {
   background:rgb(141, 102, 255);
   border: none;
   border-bottom: 2px solid white;
-  /* border: 2px solid white;
-  border-radius: 4px; */
   width: 50%;
   margin: 8px 8px;
+  color: white;
 }
 
 .intro-container-row {
