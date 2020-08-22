@@ -8,7 +8,7 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="contact-container-row">
-      <form className="contact-form" method="post" action="#">
+      <form className="contact-form" name="contact" data-netlify="true" method="post" action="#">
         <label>
           Name
           <input className="contact-input" type="text" name="name" id="name" />
@@ -16,20 +16,37 @@ const Contact = () => (
         <br />
         <label>
           Email
-          <input className="contact-input" type="email" name="email" id="email" />
+          <input
+            className="contact-input"
+            type="email"
+            name="email"
+            id="email"
+          />
         </label>
         <br />
         <label>
           Subject
-          <input className="contact-input" type="text" name="subject" id="subject" />
+          <input
+            className="contact-input"
+            type="text"
+            name="subject"
+            id="subject"
+          />
         </label>
         <br />
         <label>
           Message
-          <textarea className="contact-input" name="message" id="message" rows="5" />
+          <textarea
+            className="contact-input"
+            name="message"
+            id="message"
+            rows="5"
+          />
         </label>
         <br />
-        <button className="contact-button" type="submit">Send</button>
+        <button className="contact-button" type="submit">
+          Send
+        </button>
         <input className="contact-button" type="reset" value="Clear" />
       </form>
       <br />

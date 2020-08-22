@@ -21,6 +21,9 @@ html {
 .contact-button {
   font-family: inherit;
   font-size: 100%;
+  margin: 4px 4px;
+  padding: 4px 4px;
+  color: #462E6B;
 }
 
 .contact-input {
