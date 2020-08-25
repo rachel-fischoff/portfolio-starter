@@ -1,5 +1,6 @@
 import React from "react";
 import Headshot from "../assets/headshot.jpg";
+
 export const Intro = () => {
   return (
     <div className="row intro-container-row">
@@ -8,7 +9,7 @@ export const Intro = () => {
           <img
             src={Headshot}
             alt="Person with a mask"
-            class="intro-container__img"
+            className="intro-container__img"
           />
           <figcaption className="intro-container__caption">
             Jeremiah Smith

@@ -8,7 +8,17 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="contact-container-row">
-      <form className="contact-form" name="contact" data-netlify="true" method="post" action="#">
+      {/* <p>put other links? maybe search an icon library? email, linkedin, ig, facebook</p> */}
+      <form
+        className="contact-form"
+        name="contact"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        method="post"
+        action="#"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <label>
           Name
           <input className="contact-input" type="text" name="name" id="name" />
