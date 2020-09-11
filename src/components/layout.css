@@ -148,7 +148,7 @@ p {
 }
 
 .nav-link:hover {
-  color: rgba(255, 255, 255, 0.603);
+  color:#C41061;
   text-decoration: underline;
 }
 
