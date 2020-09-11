@@ -14,7 +14,7 @@ html {
 .contact-container-row {
   background-color: #e8eaf6;
   font-size: 2rem;
-  color:black;
+  color: black;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ html {
   font-size: 100%;
   margin: 4px 4px;
   padding: 4px 4px;
-  color: #C41061;
+  color: #c41061;
 }
 
 .contact-input {
@@ -96,7 +96,7 @@ html {
   width: 11em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  color:black;
+  color: black;
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
@@ -148,7 +148,7 @@ p {
 }
 
 .nav-link:hover {
-  color:#C41061;
+  color: #c41061;
   text-decoration: underline;
 }
 
@@ -188,7 +188,7 @@ p {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color:#000;
+  color: #000;
   z-index: 1;
 }
 
@@ -211,5 +211,44 @@ p {
   }
   to {
     border-right-color: transparent;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.portfolio-row {
+  margin: 8px 8px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #e8eaf6;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
