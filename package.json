@@ -6,6 +6,11 @@
   "author": "Rachel Fischoff + Katy Anderson",
   "dependencies": {
     "@babel/core": "^7.11.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@mdx-js/react": "^1.6.16",
     "acorn": "^6.4.1",
     "babel-plugin-styled-components": "^1.11.1",
