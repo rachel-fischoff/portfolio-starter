@@ -7,29 +7,20 @@ import SEO from "../components/SEO";
 const Portfolio = () => (
   <Layout>
     <SEO title="Portfolio" />
-    <div className="portfolio-row">
-      <div className="column">
-        <div className="card">
-          <h1>Project 1</h1>
+    <div className="portfolio-container">
+      <h1 className="portfolio-header">Projects</h1>{" "}
+      <div className="portfolio-grid-outer">
+        <div className="portfolio-grid-inner">
+          <h2 className="project-header">Name</h2>
         </div>
-      </div>
-      <div className="column">
-        <div className="card">
-          <h1>Project 2</h1>
+        <div className="portfolio-grid-inner">
+          <h2 className="project-header">Name</h2>
         </div>
-      </div>
-      <div className="column">
-        <div className="card">
-          <h1>Project 3</h1>
-        </div>
-      </div>
-      <div className="column">
-        <div className="card">
-          <h1>Project 4</h1>
+        <div className="portfolio-grid-inner">
+          <h2 className="project-header">Name</h2>
         </div>
       </div>
     </div>
-    <br />
   </Layout>
 );
 

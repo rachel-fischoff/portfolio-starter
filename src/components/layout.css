@@ -214,41 +214,42 @@ p {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-.portfolio-row {
-  margin: 8px 8px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+.portfolio-header {
   text-align: center;
+  padding: 15px;
+}
+.project-header {
+  text-align: center;
+}
+.portfolio-grid-inner {
+  margin: 4px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
   background-color: #e8eaf6;
+  padding: 2rem 1.75rem;
+  border-radius: 3px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.portfolio-grid-outer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  position: relative;
+  gap: 15px;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.portfolio-container {
+  max-width: 1000px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0px auto;
+  padding: 50px 0px;
 }
