@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
+import Icons from "../components/icons";
 import SEO from "../components/SEO";
 
 const Portfolio = () => (
@@ -12,12 +13,15 @@ const Portfolio = () => (
       <div className="portfolio-grid-outer">
         <div className="portfolio-grid-inner">
           <h2 className="project-header">Name</h2>
+          <Icons />
         </div>
         <div className="portfolio-grid-inner">
           <h2 className="project-header">Name</h2>
+          <Icons />
         </div>
         <div className="portfolio-grid-inner">
           <h2 className="project-header">Name</h2>
+          <Icons />
         </div>
       </div>
     </div>
